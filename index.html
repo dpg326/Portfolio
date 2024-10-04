@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Daniel Givens</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#current">What I'm Working On</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="image-row">
+            <img src="images/profile.webp" alt="Daniel Givens" class="gallery-image">
+            <img src="images/image2.jpg" alt="Description 2" class="gallery-image">
+            <img src="images/image3.jpg" alt="Description 3" class="gallery-image">
+            <img src="images/image4.jpg" alt="Description 4" class="gallery-image">
+        </div>
+        <h2>About Me</h2>
+        <p>Hi, I'm Daniel! Welcome to my webpage! I'm a junior at Lehigh University, pursuing a B.S. in Computer Science alongside an English minor, expected to graduate in May 2026.
+            I aspire for a role in Software Engineering, Data Science, or tech in general. Outside of the classroom, I’ve worked on research regarding machine learning’s 
+            application in cancer diagnostics, trained LLMs in safety and correctness, and developed personal programming projects for meal-planning and scheduling. In the classroom, I’ve worked across the stack and tackled topics like Blockchain and AI Game Programming.
+        </p>
+
+        <p>
+            I'm also a proud member of the Lehigh University Track and Field Team, participating in the Long Jump and Triple Jump. I love hiking, visiting cities, and drinking coffee.
+        </p>
+    </section>
+
+    <section id="current">
+        <h2>What I'm Currently Working On</h2>
+        <p>Software Engineering: I'm the Project Manager for my Software Engineering class group. We're currently in phase 1 of developing a social media app!</p>
+        <p>AI Game Programming: I'm implementing A* pathfinding in a rudimentary game engine.</p>
+        <p>Blockchain: My team is creating and serializing blocks with headers and Merkle roots using a custom-built Merkle Tree.</p>
+        <p>Organoid Sorting: Implementing a live video classification feature into the UI.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Organoid Sorting via Image Machine Learning</h3>
+            <p>This project was developed during the Mountaintop Summer Experience in June 2024 as an interdisciplinary project within Lehigh’s Bioengineering Department under Professor Yaling Liu. While the code and imaging remain confidential, our research won first prize at Lehigh's 2024 Summer Expo.</p>
+            <p>Technologies Used: Python, TensorFlow, Keras, OpenCV, Flask, Matplotlib, Seaborn, EfficientNetV2, Pandas, PySide6</p>
+            <p>We trained a supervised model on 1800+ brightfield organoid images using EfficientNetV2, achieving accuracy rates of around 92%—comparable to our unsupervised model.</p>
+            <p>Created two UIs: A simple automatic single-organoid image classifier using Flask and Bootstrap, and a more robust tool for classifying clusters of organoids via object detection on static images and live video.</p>
+        </div>
+        <div class="project">
+            <h3>Nutrinote</h3>
+            <p>Nutrinote is my on-again, off-again side project: a meal planning app designed for ease and affordability. It lets you save meal recipes, plan your weekly meals, and generates grocery lists. By importing your receipts, you get accurate price estimates for your grocery list depending on the store! Can't think of a meal? Use OpenAI to suggest a brand new recipe!</p>
+            <p>Technologies Used: React, Firebase, OpenAI, JavaScript, CSS/HTML</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Java, Python, HTML/CSS, JavaScript, C, SQL, R</li>
+            <li>Frameworks: React, Java Spring, TensorFlow, Keras, Flask, Javelin, Maven, Tensorflow  </li>
+            <li>Tools: Git, VS Code, Jupyter Notebook, Jira, Android Studio, Markdown, Bitbucket</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:danielgivens4@gmail.com">danielgivens4@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/daniel-givens-589073273/">Daniel Givens</a></p>
+        <p>test</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Daniel Givens</p>
+    </footer>
+</body>
+</html>
