@@ -1,93 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Givens Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Daniel Givens</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#current">What I'm Working On</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <div class="image-row">
-            <img src="Images/profile.webp" alt="Daniel Givens" class="gallery-image">
-            <img src="Images/image2.JPG" alt="Description 2" class="gallery-image">
-            <img src="Images/image3.jpg" alt="Description 3" class="gallery-image">
-            <img src="Images/image4.JPG" alt="Description 4" class="gallery-image">
-        </div>
-        <h2>About Me</h2>
-        <p>Hi, I'm Daniel! Welcome to my webpage! I'm a junior at Lehigh University, pursuing a B.S. in Computer Science alongside an English minor, expected to graduate in May 2026.
-            I aspire for a role in Software Engineering, Data Science, or tech in general. Outside of the classroom, I’ve worked on research regarding machine learning’s 
-            application in cancer diagnostics, trained LLMs in safety and correctness, and developed personal programming projects for meal-planning and scheduling. In the classroom, I’ve worked across the stack and tackled topics like Blockchain and AI Game Programming.
-        </p>
-
-        <p>
-            I'm also a proud member of the Lehigh University Track and Field Team, participating in the Long Jump and Triple Jump. I love hiking, visiting cities, and drinking coffee.
-        </p>
+<body class="bg-amber-50">
+    <!-- Hero Section -->
+    <section class="relative bg-white h-screen flex items-center justify-center text-center">
+      <!-- Background Overlay -->
+      <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+      
+      <div class="text-black-600 space-y-6 z-10">
+        <h1 class="text-6xl font-extrabold tracking-tight">
+          Daniel Givens
+        </h1>
+        <p class="text-xl">Aspiring Software Engineer</p>
+        <button onclick="scrollToProjects()" class="px-6 py-3 bg-white text-green-700 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition">
+            View My Work
+          </button>
+      </div>
     </section>
-
-    <section id="current">
-        <h2>What I'm Currently Working On</h2>
-        <p>Fanfare: A personal project combining Census data on Metropolitan Statistical Areas with professional sports team performance. Using sports APIs and Tableau for visualization, it analyzes which fanbases have enjoyed the most success per capita. The project could also highlight underfed or oversaturated markets</p>
-        <p>Intro to Data Science: We recently completed our first project in R. For me, this was a refresher on some of the basics of R.</p>
-        <p>Capstone Project: I have joined the team working on Enrollement Forecaster. This project focuses on creating an application to help CSE students plan and track their degree progression, communicate course sequences, and indicate interest in new courses. </p>
-        <p>Design & Analysis of Algorithms: We recently have gone over the Merge Sort, largest maximum subarray, and Selection sort problems.</p>
-    </section>
-
-    <section id="projects">
-        
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Octo – Private Social Media App</h3>
-            <p>This project was done in collaboration with my team during my CSE216 Software Engineering course</p>
-            <p>Octo is a secure internal social media platform designed to facilitate collaboration within a theoretical company, developed with a team of four as part of a semester-long project. Using agile methodology, the team incorporated daily scrums, code reviews, and role rotations to ensure efficient development and timely feature delivery.</p>
-            <p>Key features include user authentication, authorization, voting mechanisms, text-based commenting, and robust user profiles for both web and mobile platforms.</p>
-            <p>Technologies Used: React, Maven, Javelin, Java, Dokku, Bitbucket, Jira, Flutter, Android Studio, Supabase</p>
+  </body>
+  
+<!-- About Section -->
+<section class="py-16 px-4 bg-white text-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        Hi, I'm Daniel! Welcome to my webpage! I'm a junior at Lehigh University, pursuing a B.S. in Computer Science alongside an English minor, expected to graduate in May 2026.
+        I aspire for a role in Software Engineering, Data Science, or tech in general. Outside of the classroom, I’ve worked on research regarding machine learning’s 
+        application in cancer diagnostics, trained LLMs in safety and correctness, and developed personal programming projects for meal-planning and scheduling. In the classroom, I’ve worked across the stack and tackled topics like Blockchain and AI Game Programming.
+      </p>
+  
+      <!-- Image Gallery Section -->
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-----Profile-->
+        <div class="group relative">
+            <img src="images/profile.webp" alt="Image 3" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+              <p class="text-white text-lg">I'm a member of Lehigh University's Track and Field team, participating in Long Jump and Triple Jump</p>
+            </div>
+          </div>
+        <!-- Image 1 -->
+        <div class="group relative">
+          <img src="images/image4.jpg" alt="Image 1" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg">My partner Partho and I displaying our work on Organoid Sorting via Image Machine Learning at Lehigh's Summer Expo.</p>
+          </div>
         </div>
         
-        <div class="project">
-            <h3>Organoid Sorting via Image Machine Learning</h3>
-            <p>This project was developed during the Mountaintop Summer Experience in June 2024 as an interdisciplinary project within Lehigh’s Bioengineering Department under Professor Yaling Liu. All the code and imaging is under lab confidentiality, but I'm proud to say our research won first prize at Lehigh's 2024 Summer Expo.</p>
-            <p>Technologies Used: Python, TensorFlow, Keras, OpenCV, Flask, Matplotlib, Seaborn, EfficientNetV2, Pandas, PySide6</p>
-            <p>We trained a supervised model on 1800+ brightfield organoid images using EfficientNetV2, achieving accuracy rates of around 92%—comparable to our unsupervised model.</p>
-            <p>Created two UIs: A simple automatic single-organoid image classifier using Flask and Bootstrap, and a more robust tool for classifying clusters of organoids via object detection on static images and live video.</p>
+        <!-- Image 2 -->
+        <div class="group relative">
+          <img src="images/image2.jpg" alt="Image 2" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg">I love the outdoors. Yosemite, pictured here, was beautiful</p>
+          </div>
         </div>
-        <div class="project">
-            <h3>Nutrinote</h3>
-            <p>Nutrinote is my on-again, off-again side project: a meal planning app designed for ease and affordability. It lets you save meal recipes, plan your weekly meals, and generates grocery lists. By importing your receipts, you get accurate price estimates for your grocery list depending on the store! Can't think of a meal? Use OpenAI to suggest a brand new recipe!</p>
-            <p>Technologies Used: React, Firebase, OpenAI, JavaScript, CSS/HTML</p>
+        
+        <!-- Image 3 -->
+        <div class="group relative">
+          <img src="images/image3.jpg" alt="Image 3" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg">My Girlfriend, an aspiring PA, and I overtop the scenic Delaware Water Gap.</p>
+          </div>
         </div>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, Python, HTML/CSS, JavaScript, C, SQL, R</li>
-            <li>Frameworks: React, Java Spring, TensorFlow, Keras, Flask, Javelin, Maven, Tensorflow  </li>
-            <li>Tools: Git, VS Code, Jupyter Notebook, Jira, Android Studio, Markdown, Bitbucket</li>
-        </ul>
-    </section>
+      </div>
+    </div>
+  </section>
+  
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:danielgivens4@gmail.com">danielgivens4@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/daniel-givens-589073273/">Daniel Givens</a></p>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="bg-amber-100 py-16">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/project1.png" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold group-hover:text-green-700">Fanfare</h3>
+            <p class="text-gray-600">A data study of which city's sports fans have been starved and which have been overfed.</p>
+            <a href="fanfare.html" class="text-green-700 font-semibold mt-2 inline-block group-hover:underline">Learn More →</a>
+          </div>
+        </div>
+        <div class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <img src="images/project2.png" alt="Project 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold group-hover:text-green-700">Octo</h3>
+              <p class="text-gray-600">A secure internal social media site. Semester Long project for CSE216</p>
+              <a href="Octo.html" class="textS-green-700 font-semibold mt-2 inline-block group-hover:underline">Learn More →</a>
+            </div>
+          </div>
+          <div class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <img src="images/organoid.png" alt="Project 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold group-hover:text-green-700">Organoid Sorting via Image Machine Learning</h3>
+              <p class="text-gray-600">A summer-long interdisciplinary project to explore how image analytic machine learning models can improve cancer diagnostics</p>
+              <a href="OrganoidSorting.html" class="textS-green-700 font-semibold mt-2 inline-block group-hover:underline">Learn More →</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Daniel Givens</p>
-    </footer>
-</body>
-</html>
+  <!-- Skills Section -->
+  <section class="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-200 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Skills</h2>
+      <div id="skills-grid" class="grid grid-cols-2 md:grid-cols-8 gap-5"></div>
+    </div>
+  </section>
+  
+  <script>
+    const skills = [
+      { name: 'React', imgSrc: 'images/React-logo.png' },
+      { name: 'Java', imgSrc: 'images/java-logo.jpg' },
+      { name: 'Python', imgSrc: 'images/python-logo.png' },
+      { name: 'C', imgSrc: 'images/C_Logo.png' },
+      { name: 'Tensorflow', imgSrc: 'images/Tensorflow.png' },
+      { name: 'Tableau', imgSrc: 'images/Tableau.png' },
+      { name: 'R', imgSrc: 'images/R_logo.png' },
+      { name: 'Tailwind', imgSrc: 'images/tailwind.png' },
+      { name: 'JavaScript', imgSrc: 'images/JavaScript-logo.png' },
+      { name: 'Pytorch', imgSrc: 'images/pytorch.png'},
+      { name: 'Excel', imgSrc: 'images/Excel.png'}
+    ];
+  
+    const skillsGrid = document.getElementById('skills-grid');
+  
+    skills.forEach(skill => {
+      const skillDiv = document.createElement('div');
+      skillDiv.classList.add('text-center');
+      
+      skillDiv.innerHTML = `
+        <div class="relative w-24 h-24 mx-auto">
+          <div class="absolute inset-0 bg-green-700 rounded-full animate-pulse"></div>
+          <div class="absolute inset-2 bg-white rounded-full flex items-center justify-center">
+            <img src="${skill.imgSrc}" alt="${skill.name}" class="w-12 h-12">
+          </div>
+        </div>
+        <p class="mt-4 font-semibold">${skill.name}</p>
+      `;
+  
+      skillsGrid.appendChild(skillDiv);
+    });
+  </script>
+  
+        
+      </div>
+    </div>
+  </section>
+<!-- Contact Section -->
+<section class="bg-gray-800 text-white py-16 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-lg mb-6">Feel free to connect with me on LinkedIn or send me an email.</p>
+      <div class="space-y-4">
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/daniel-givens-589073273/" target="_blank" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-blue-500 transition w-full text-center">
+          Connect on LinkedIn
+        </a>
+        <!-- Email Link -->
+        <a href="mailto:danielgivens4@gmail.com" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-green-600 transition w-full text-center">
+          Send an Email
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function scrollToProjects() {
+      const projectsSection = document.getElementById('projects');
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  

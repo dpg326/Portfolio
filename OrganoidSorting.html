@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organoid Sorting Project - Daniel Givens Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50">
+     <!-- Home Button (Fixed at top of page) -->
+  <div class="fixed top-4 left-4 z-20">
+    <a href="index.html" class="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
+      Home
+    </a>
+  </div>
+  <!-- Hero Section for Project -->
+  <section class="relative bg-white h-screen flex items-center justify-center text-center">
+    <!-- Background Overlay -->
+    <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+    
+    <div class="text-black-600 space-y-6 z-10">
+      <h1 class="text-6xl font-extrabold tracking-tight">
+        Organoid Sorting Via Image Machine Learning
+      </h1>
+      <p class="text-xl">An exploration into the potential of Machine Learning in cancer diagnostics</p>
+    </div>
+  </section>
+
+  <!-- Project Description Section -->
+  <section class="py-16 px-4 bg-white text-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Project Overview</h2>
+      <p class="text-lg leading-relaxed">
+        Organoid Sorting via Image Machine Learning was a summer-long project I undertook under the support of Lehigh Creative Inquiry. It was a interdisciplinary project with the bioengineering labratory. Personally, I oversaw training various models using both PyTorch and Tensorflow, performed data hygeine on brightfield images, and developed frontend user interfaces for image classification. At the program's closure, we got to present our research at Lehigh's Summer Expo, in which we won first prize in research. Due to lab confidentiality, I can't disclose too many details on my work.
+    </div>
+  </section>
+  <!-- Image Gallery Section -->
+  <section class="py-16 bg-amber-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Visuals and Insights</h2>
+      <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div class="group relative">
+          <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+            <img src="images/image4.JPG" alt="Expo" class="w-full h-full object-contain transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg">My partner and I presenting our summer's research at the Lehigh Summer Expo where we won first prize for Research.</p>
+          </div>
+        </div>
+  
+        
+        <div class="group relative">
+            <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+              <img src="images/organoid.png" alt="Tableau Chart" class="w-full h-full object-contain transition duration-500 group-hover:scale-105">
+            </div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+              <p class="text-white text-lg">Simple UI for training purposes.</p>
+            </div>
+          </div>
+        
+        <div class="group relative">
+          <img src="images/Organoid2.png" alt="Organoid Images" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg">The style of organoid images the model was trained on. These images are not from our lab, I cannot share the original images.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Used Section -->
+  <section class="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-200 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Technologies Used</h2>
+      <div class="flex justify-center space-x-8">
+        <div>
+          <img src="images/python-logo.png" alt="Python" class="w-16 h-16">
+          <p class="mt-2">Python</p>
+        </div>
+        <div>
+          <img src="images/pytorch.png" alt="Matplotlib" class="w-16 h-16">
+          <p class="mt-2">PyTorch</p>
+        </div>
+        <div>
+          <img src="images/Tensorflow.png" alt="Pandas" class="w-16 h-16">
+          <p class="mt-2">Tensorflow</p>
+        </div>
+        <div>
+            <img src="images/Seaborn.png" alt="Pandas" class="w-16 h-16">
+            <p class="mt-2">Seaborn</p>
+        </div>
+          <div>
+            <img src="images/Flask.png" alt="Pandas" class="w-16 h-16">
+            <p class="mt-2">Flask</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-gray-800 text-white py-16 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-lg mb-6">Feel free to connect with me on LinkedIn or send me an email if you'd like to know more!</p>
+      <div class="space-y-4">
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/daniel-givens-589073273/" target="_blank" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-blue-500 transition w-full text-center">
+          Connect on LinkedIn
+        </a>
+        <!-- Email Link -->
+        <a href="mailto:danielgivens4@gmail.com" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-green-600 transition w-full text-center">
+          Send an Email
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

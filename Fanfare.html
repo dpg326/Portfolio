@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanfare Project - Daniel Givens Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50">
+     <!-- Home Button (Fixed at top of page) -->
+  <div class="fixed top-4 left-4 z-20">
+    <a href="index.html" class="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
+      Home
+    </a>
+  </div>
+  <!-- Hero Section for Project -->
+  <section class="relative bg-white h-screen flex items-center justify-center text-center">
+    <!-- Background Overlay -->
+    <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+    
+    <div class="text-black-600 space-y-6 z-10">
+      <h1 class="text-6xl font-extrabold tracking-tight">
+        Fanfare
+      </h1>
+      <p class="text-xl">A data study of which city's sports fans have been starved and which have been overfed.</p>
+    </div>
+  </section>
+
+  <!-- Project Description Section -->
+  <section class="py-16 px-4 bg-white text-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Project Overview</h2>
+      <p class="text-lg leading-relaxed">
+        Fanfare explores the disparity between the success of sports teams and the population sizes of the Metropolitan Statistical Areas (MSAs) they represent. It highlights which cities have been starved of championship-caliber teams and which have been overindulged, considering the potential fanbase based on MSA population data.
+
+Currently in its early stages, the project includes population data for all 43 U.S. cities with professional sports teams. It also tracks the number of teams each MSA has had each year since 1970. This data helps visualize which cities have more teams than expected or fewer, based on the population size that could support stadium attendance.
+
+The next step is to incorporate wins and yearly ELO ratings, providing a deeper look at which fanbases have celebrated championship success and which have endured years of underperformance.
+    </div>
+  </section>
+
+  <!-- Image Gallery Section -->
+  <section class="py-16 bg-amber-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Visuals and Insights</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8">
+        <div class="group relative">
+          <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+            <img src="images/FF_HeatMap.png" alt="Data Analysis Chart" class="w-full h-full object-contain transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg">A preliminary heatmap detailing the population per team in MSAs the last 20 years. Showing Green Bay has consistently had more teams than their population expects while San Diego has suffered with a single team for their much larger population.</p>
+          </div>
+        </div>
+  
+        
+        <div class="group relative">
+            <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+              <img src="images/FF_Tableau.png" alt="Tableau Chart" class="w-full h-full object-contain transition duration-500 group-hover:scale-105">
+            </div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+              <p class="text-white text-lg">A preliminary tableau chart detailing the population per team over a 3 year span in the 70s.</p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+              <img src="images/FF_population.png" alt="Fanbase growth" class="w-full h-full object-contain transition duration-500 group-hover:scale-105">
+            </div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+              <p class="text-white text-lg">Growth in Fanbase Over Time: Analysis of urban growth in MSAs with a professional sports Team.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Used Section -->
+  <section class="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-200 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Technologies Used</h2>
+      <div class="flex justify-center space-x-8">
+        <div>
+          <img src="images/python-logo.png" alt="Python" class="w-16 h-16">
+          <p class="mt-2">Python</p>
+        </div>
+        <div>
+          <img src="images/Tableau.png" alt="Matplotlib" class="w-16 h-16">
+          <p class="mt-2">Tableau</p>
+        </div>
+        <div>
+          <img src="images/Excel.png" alt="Excel" class="w-16 h-16">
+          <p class="mt-2">Excel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-gray-800 text-white py-16 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-lg mb-6">Feel free to connect with me on LinkedIn or send me an email if you'd like to know more!</p>
+      <div class="space-y-4">
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/daniel-givens-589073273/" target="_blank" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-blue-500 transition w-full text-center">
+          Connect on LinkedIn
+        </a>
+        <!-- Email Link -->
+        <a href="mailto:danielgivens4@gmail.com" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-green-600 transition w-full text-center">
+          Send an Email
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
