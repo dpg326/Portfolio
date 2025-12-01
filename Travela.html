@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travela - A full-stack travel sharing platform with interactive maps and social features. Built with React, Node.js, and PostgreSQL by Daniel Givens.">
+  <meta name="author" content="Daniel Givens">
+  <title>Travela Project - Daniel Givens Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50">
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-green-700">DG</a>
+      <div class="flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-green-700 transition">Home</a>
+        <a href="index.html#projects" class="text-gray-700 hover:text-green-700 transition">All Projects</a>
+        <a href="index.html#contact" class="text-gray-700 hover:text-green-700 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section for Project -->
+  <section class="relative bg-white h-screen flex items-center justify-center text-center">
+    <!-- Background Overlay -->
+    <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+    
+    <div class="text-black-600 space-y-6 z-10">
+      <h1 class="text-6xl font-extrabold tracking-tight">
+        Travela
+      </h1>
+      <p class="text-xl">A Full-Stack Travel Sharing Platform</p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Create, share, and explore trips with interactive maps and social features</p>
+    </div>
+  </section>
+
+  <!-- Project Overview Section -->
+  <section class="py-16 px-4 bg-white text-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8 text-center">Project Overview</h2>
+      <p class="text-lg leading-relaxed mb-6">
+        Travela is a comprehensive full-stack travel sharing platform that combines social networking features with interactive mapping technology. Users can create detailed trip entries, share their travel experiences with the community, and explore destinations worldwide through an intuitive interface.
+      </p>
+      <p class="text-lg leading-relaxed">
+        The platform emphasizes user engagement through social features like likes, comments, and bookmarks, while providing powerful tools for trip discovery through search, filtering, and interactive map visualization. Built with modern web technologies and best practices, Travela demonstrates proficiency in full-stack development, database design, and user experience optimization.
+      </p>
+    </div>
+  </section>
+
+  <!-- Image Gallery Section -->
+  <section class="py-16 bg-amber-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-8">Visuals and Insights</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8">
+        <div class="group relative">
+          <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+            <img src="Images/TravelaLanding.png" alt="Travela Landing Page" class="w-full h-full object-contain transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg px-4">Landing page showcasing the interactive map with trip markers and the explore feed featuring user-generated travel content.</p>
+          </div>
+        </div>
+  
+        <div class="group relative">
+          <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+            <img src="Images/TravelaExplore.png" alt="Travela Explore Page" class="w-full h-full object-contain transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <p class="text-white text-lg px-4">Explore page with search functionality, trip cards displaying destinations, and social engagement features like likes and comments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center">Core Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">🔐</div>
+          <h3 class="text-xl font-semibold mb-3">Secure Authentication</h3>
+          <p class="text-gray-600">User registration and login with bcrypt password hashing, session management, and role-based access control for regular users and administrators.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">✈️</div>
+          <h3 class="text-xl font-semibold mb-3">Trip Creation</h3>
+          <p class="text-gray-600">Comprehensive trip builder with title, description, dates, location picker on interactive maps, photo uploads, and public/private visibility settings.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">🗺️</div>
+          <h3 class="text-xl font-semibold mb-3">Interactive Maps</h3>
+          <p class="text-gray-600">Powered by Leaflet, trips are plotted worldwide with cluster markers, click-to-preview functionality, and smooth pan/zoom navigation.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">🔍</div>
+          <h3 class="text-xl font-semibold mb-3">Advanced Search</h3>
+          <p class="text-gray-600">Search and filter trips by title, location, or description with responsive grid layout and smooth loading states for optimal user experience.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">💬</div>
+          <h3 class="text-xl font-semibold mb-3">Social Engagement</h3>
+          <p class="text-gray-600">Like, comment, and bookmark trips. Threaded comments for discussions, user profiles with stats, and engagement metrics tracking.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">📊</div>
+          <h3 class="text-xl font-semibold mb-3">User Dashboard</h3>
+          <p class="text-gray-600">Personal dashboard displaying created trips, saved bookmarks, profile editing capabilities, and comprehensive engagement analytics.</p>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">⚙️</div>
+          <h3 class="text-xl font-semibold mb-3">Admin Dashboard</h3>
+          <p class="text-gray-600">Comprehensive admin panel for user management, trip moderation, activity logs, and platform analytics with role-based permissions.</p>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-semibold mb-3">Responsive Design</h3>
+          <p class="text-gray-600">Mobile-first responsive design ensuring seamless experience across all devices with TailwindCSS and Material UI components.</p>
+        </div>
+
+        <!-- Feature 9 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-green-700 text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-semibold mb-3">Production Ready</h3>
+          <p class="text-gray-600">Optimized builds, environment variable configuration, and deployment-ready architecture for platforms like Render, Heroku, or Vercel.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Architecture Section -->
+  <section class="py-16 px-4 bg-white text-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-center">Technical Architecture</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <!-- Frontend -->
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 text-green-800">Frontend</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">▸</span>
+              <span><strong>React with Vite</strong> - Fast, modern build tooling</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">▸</span>
+              <span><strong>TailwindCSS</strong> - Utility-first styling</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">▸</span>
+              <span><strong>Material UI</strong> - Component library</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">▸</span>
+              <span><strong>Leaflet</strong> - Interactive mapping</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">▸</span>
+              <span><strong>React Hooks</strong> - State management</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">▸</span>
+              <span><strong>Axios</strong> - HTTP client</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Backend -->
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 text-blue-800">Backend</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">▸</span>
+              <span><strong>Node.js & Express</strong> - RESTful API</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">▸</span>
+              <span><strong>PostgreSQL</strong> - Relational database</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">▸</span>
+              <span><strong>Bcrypt</strong> - Password hashing</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">▸</span>
+              <span><strong>Express Sessions</strong> - Authentication</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">▸</span>
+              <span><strong>Multer</strong> - File upload handling</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">▸</span>
+              <span><strong>Middleware</strong> - Auth & validation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Database Schema -->
+      <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg">
+        <h3 class="text-2xl font-bold mb-4 text-purple-800">Database Design</h3>
+        <p class="text-gray-700 mb-4">7 main tables with carefully designed relationships ensuring data consistency and integrity:</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Users</p>
+          </div>
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Trips</p>
+          </div>
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Photos</p>
+          </div>
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Likes</p>
+          </div>
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Bookmarks</p>
+          </div>
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Comments</p>
+          </div>
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Admin Logs</p>
+          </div>
+          <div class="bg-white p-3 rounded shadow">
+            <p class="font-semibold text-purple-700">Sessions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Highlights Section -->
+  <section class="py-16 bg-amber-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-8 text-center">Technical Highlights</h2>
+      <div class="space-y-4">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-green-700">RESTful API Design</h3>
+          <p class="text-gray-600">Clean, organized endpoints following REST principles with proper HTTP methods, status codes, and error handling.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-green-700">Security Best Practices</h3>
+          <p class="text-gray-600">Bcrypt password hashing, secure session management, role-based access control, input validation, and SQL injection prevention.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-green-700">Modern State Management</h3>
+          <p class="text-gray-600">React hooks for efficient state handling, optimistic UI updates for instant feedback, and smooth user experience.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-green-700">Scalable Architecture</h3>
+          <p class="text-gray-600">Clear separation of concerns between frontend and backend, modular code structure, and environment-based configuration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Enhancements Section -->
+  <section class="py-16 px-4 bg-white text-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8 text-center">Future Enhancements</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">Real-time notifications for likes, comments, and follows</p>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">Personalized trip recommendations based on user preferences</p>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">Integration with external travel APIs for weather and attractions</p>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">Advanced filtering by date range, budget, and trip type</p>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">User following system and personalized feed</p>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">Detailed itinerary planning with day-by-day breakdown</p>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">Export trips to PDF and share on social media</p>
+        </div>
+        <div class="flex items-start space-x-3">
+          <span class="text-green-600 text-xl">✓</span>
+          <p class="text-gray-700">Mobile app development for iOS and Android</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Used Section -->
+  <section class="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-200 py-16">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-4xl font-bold mb-8">Technologies Used</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <div>
+          <img src="Images/React-logo.png" alt="React" class="w-16 h-16 mx-auto">
+          <p class="mt-2">React</p>
+        </div>
+        <div>
+          <img src="Images/JavaScript-logo.png" alt="Node.js" class="w-16 h-16 mx-auto">
+          <p class="mt-2">Node.js</p>
+        </div>
+        <div>
+          <img src="Images/tailwind.png" alt="TailwindCSS" class="w-16 h-16 mx-auto">
+          <p class="mt-2">TailwindCSS</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 mx-auto bg-blue-600 rounded flex items-center justify-center">
+            <span class="text-white font-bold text-2xl">PG</span>
+          </div>
+          <p class="mt-2">PostgreSQL</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 mx-auto bg-green-600 rounded flex items-center justify-center">
+            <span class="text-white font-bold text-xl">🗺️</span>
+          </div>
+          <p class="mt-2">Leaflet</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-gray-800 text-white py-16 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-lg mb-6">Interested in learning more about this project? Feel free to connect with me on LinkedIn or send me an email!</p>
+      <div class="space-y-4">
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/daniel-givens-589073273/" target="_blank" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-blue-500 transition w-full text-center inline-block">
+          Connect on LinkedIn
+        </a>
+        <!-- Email Link -->
+        <a href="mailto:danielgivens4@gmail.com" 
+          class="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-green-600 transition w-full text-center inline-block">
+          Send an Email
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
