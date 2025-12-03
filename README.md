@@ -2,11 +2,11 @@
 
 A modern, responsive portfolio website showcasing my software engineering projects, skills, and experience.
 
-## 🌟 About
+## About
 
 This portfolio website highlights my journey as a Computer Science student at Lehigh University, featuring projects in full-stack development, machine learning, data science, and software engineering.
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### Travela
 A full-stack travel sharing platform with interactive maps and social features. Built with React, Node.js, Express, and PostgreSQL.
@@ -32,7 +32,7 @@ A secure internal social media platform developed as a semester-long CSE216 Soft
 Summer research project exploring ML applications in cancer diagnostics through image classification.
 - **Tech Stack**: Python, PyTorch, TensorFlow, Seaborn, Flask
 
-## 🛠️ Technologies & Skills
+## Technologies & Skills
 
 **Languages**: JavaScript, Python, Java, C, R  
 **Frontend**: React, TailwindCSS, Material UI, HTML/CSS  
@@ -41,7 +41,7 @@ Summer research project exploring ML applications in cancer diagnostics through 
 **ML/Data Science**: PyTorch, TensorFlow, Tableau  
 **Tools**: Git, Dokku, Maven, Vite
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Resume-site/
@@ -55,7 +55,7 @@ Resume-site/
 └── README.md              # This file
 ```
 
-## 🌐 Deployment
+## Deployment
 
 This is a static website that can be deployed to any static hosting service:
 
@@ -78,7 +78,7 @@ python -m http.server 8000
 npx http-server
 ```
 
-## 📧 Contact
+## Contact
 
 **Daniel Givens**  
 - Email: danielgivens4@gmail.com  
@@ -87,7 +87,7 @@ npx http-server
 - Major: B.S. Computer Science (Minor: English)  
 - University: Lehigh University
 
-## 📝 License
+## License
 
 This portfolio is for personal use. Feel free to use the structure as inspiration for your own portfolio, but please don't copy the content directly.
 
